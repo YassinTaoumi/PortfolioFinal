@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42242964-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-42242964-1');
+    </script>
+
+    <!-- Regular data -->
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- Description -->
+    <meta name="author" content="Yassin Taoumi" />
+    <meta name="description" content="I design & build websites." />
+
+
+
+    <!-- Title -->
+    <title>Yassin Taoumi</title>
+
+
+
+
+
+    <!-- CSS -->
+    <link href="../style.css" rel="stylesheet" type="text/css">
+
+    <!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+    <script>
+        document.documentElement.classList.remove("no-js")
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- Reveal on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="website-background-black">
+
+
+    <div class="max-width">
+        <div class="logo">
+            <div class="logo-inner">
+                <a href="../">
+                    <div class="label-logo on-hover--40 text-color-white"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="top-bottom-margin">
+            <div class="hide-text-block">
+                <h2 class="text-color-white animate">Let's make something great!</h2>
+            </div>
+
+            <div class="max-width-70 text-color-white animate delay02">
+                <h4>Contact</h4>
+                <p>
+                    I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just work for them. I want to bring my collective web development experience to the table where we can work together to solve real business-problems in a way that
+                    optimizes all of our respective experience and knowledge.
+                </p>
+                <p>
+                    Feel free to reach out through any platforms bellow:
+                </p>
+
+                <div class="links">
+                    <a class="on-hover-40 text-color-red label-email copy-email"></a>
+                    <a class="on-hover-40 text-color-red" href="https://github.com/YassinTaoumi/" target="_blank">GitHub</a>
+                    <a class="on-hover-40 text-color-red" href="https://www.instagram.com/yassin__taoumi/" target="_blank">Instagram</a>
+                    <a class="on-hover-40 text-color-red" href="https://twitter.com/YassinTaoumi02" target="_blank">Twitter</a>
+                    <a class="on-hover-40 text-color-red" href="https://www.linkedin.com/in/yassin-taoumi/" target="_blank">Linkedin</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <! end max-width ->
+
+
+
+    <!-- Yall lazy load -->
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="../js/yall.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", yall);
+    </script>
+
+
+    <!-- Copy to clipboard -->
+    <script src="../js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.copy-email', {
+            text: function() {
+                return 'hello@dejan.works';
+            }
+        });
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+
+</body>
+
+</html>

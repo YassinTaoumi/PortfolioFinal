@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42242964-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-42242964-1');
+    </script>
+
+    <!-- Regular data -->
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- Description -->
+    <meta name="author" content="Yassin Taoumi" />
+    <meta name="description" content="I design & build websites." />
+
+
+
+    <!-- Title -->
+    <title>Yassin Taoumi</title>
+
+
+
+
+
+    <!-- CSS -->
+    <link href="../style.css" rel="stylesheet" type="text/css">
+
+    <!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+    <script>
+        document.documentElement.classList.remove("no-js")
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- Reveal on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="website-background-black">
+
+
+    <div class="max-width">
+        <div class="logo">
+            <div class="logo-inner">
+                <a href="../">
+                    <div class="label-logo on-hover--40 text-color-white"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="top-bottom-margin">
+            <div class="hide-text-block">
+                <h2 class="text-color-white animate">Skills are Freedom </h2>
+            </div>
+
+        </div>
+
+
+
+
+        <style>
+            .cont {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+            
+            .cont .card {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                background: primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .cont .card .percent {
+                position: relative;
+                width: 150px;
+                height: 150px;
+            }
+            
+            .cont .card .percent svg {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                transform: rotate(270deg);
+            }
+            
+            .cont .card .percent svg circle {
+                width: 100%;
+                height: 100%;
+                fill: transparent;
+                stroke-width: 10;
+                stroke: black;
+                transform: translate(5px, 5px);
+            }
+            
+            .cont .card .percent svg circle:nth-child(2) {
+                stroke: var(--clr);
+                stroke-dasharray: 440px;
+                stroke-dashoffset: calc(440 - (440*var(--num)) / 100);
+                opacity: 0;
+            }
+            
+            .cont .card .percent svg .nb2 {
+                animation: fadeIn 1s linear forwards;
+                animation-delay: 1.5s;
+            }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            .dot {
+                position: absolute;
+                inset: 5px;
+                z-index: 10;
+                transform: rotate(calc(3.6deg * var(--num)));
+            }
+            
+            .dotanim {
+                animation: animateDot 1.5s linear forwards;
+            }
+            
+            @keyframes animateDot {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(calc(3.6deg * var(--num)));
+                }
+            }
+            
+            .dot::before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: var(--clr);
+                box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+            }
+            
+            .number {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                opacity: 0;
+            }
+            
+            .numanim {
+                animation: fadeIn 1s linear forwards;
+                animation-delay: 1.5s;
+            }
+            
+            .number h2 {
+                font-family: 'Work Sans', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+                font-size: 1.0rem;
+            }
+            
+            .number h2 span {
+                font-weight: 100;
+                color: black;
+                font-size: 0.2rem;
+            }
+            
+            .number p {
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin-top: 10px;
+                text-transform: uppercase;
+                color: white;
+            }
+        </style>
+        <div class="max-width-70 text-color-white animate delay02">
+            <h4>What I'm Good at :</h4>
+            <p>
+                In my learning process and also the working process I have tried too many technologies in the web development domain which makes me flexible to any new technology I have the power to quickly adapt to the new technologies / Frameworks
+            </p>
+            <p>
+                Here is my Level in every technology that I worked with:
+            </p>
+        </div>
+
+        <div class="cont">
+            <div class="card">
+                <div class="percent" style="--clr:red;--num:90">
+                    <div class="dot dotanim"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle class="nb nb2" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number numanim">
+                        <h2>90
+                            <spane>%</spane>
+                        </h2>
+                        <p style="font-size: 15px;">HTML&CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="percent" style="--clr:red;--num:90">
+                    <div class="dot dotanim"></div>
+                    <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="nb nb2" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    <div class="number numanim">
+                        <h2>90
+                            <spane>%</spane>
+                        </h2>
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="percent" style="--clr:red;--num:98">
+                    <div class="dot dotanim"></div>
+                    <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="nb nb2" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    <div class="number numanim">
+                        <h2>98
+                            <spane>%</spane>
+                        </h2>
+                        <p style="font-size: 15px;">Javascript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="percent" style="--clr:red;--num:85">
+                    <div class="dot dotanim"></div>
+                    <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="nb nb2" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                    <div class="number numanim">
+                        <h2>85
+                            <spane>%</spane>
+                        </h2>
+                        <p>Laravel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="percent" style="--clr:red;--num:91">
+                    <div class="dot dotanim"></div>
+                    <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle class="nb nb2" cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    <div class="number numanim">
+                        <h2>91
+                            <spane>%</spane>
+                        </h2>
+                        <p>VueJs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Yall lazy load -->
+        <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+        <script src="../js/yall.min.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", yall);
+        </script>
+
+
+        <!-- Copy to clipboard -->
+        <script src="../js/clipboard.min.js"></script>
+        <script>
+            const square = document.querySelectorAll('.dot');
+
+
+            const square2 = document.querySelectorAll('.nb');
+
+            const square3 = document.querySelectorAll('.number');
+            square.forEach(squar => {
+                squar.classList.remove('dotanim');
+            });
+            square2.forEach(squar => {
+                squar.classList.remove('nb2');
+            });
+            square3.forEach(squar => {
+                squar.classList.remove('numanim');
+            });
+
+
+            // Create the observer, same as before:
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        square.forEach(squar => {
+                            squar.classList.add('dotanim');
+                        });
+                        square2.forEach(squar => {
+                            squar.classList.add('nb2');
+                        });
+                        square3.forEach(squar => {
+                            squar.classList.add('numanim');
+                        });
+
+                        return;
+                    }
+                    square.forEach(squar => {
+                        squar.classList.remove('dotanim');
+                    });
+                    square2.forEach(squar => {
+                        squar.classList.remove('nb2');
+                    });
+                    square3.forEach(squar => {
+                        squar.classList.remove('numanim');
+                    });
+                });
+            });
+            observer.observe(document.querySelector('.percent'));
+        </script>
+        </script>
+        <script>
+            var clipboard = new ClipboardJS('.copy-email', {
+                text: function() {
+                    return 'hello@dejan.works';
+                }
+            });
+            clipboard.on('success', function(e) {
+                console.log(e);
+            });
+            clipboard.on('error', function(e) {
+                console.log(e);
+            });
+        </script>
+
+
+</body>
+
+</html>
